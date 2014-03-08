@@ -32,6 +32,5 @@ module Codebreaker
     def number_match?(guess, index)
       @secret.include?(guess[index]) && !exact_match?(guess,index)
     end
-
   end
 end
