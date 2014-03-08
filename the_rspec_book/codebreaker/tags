@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Codebreaker	lib/codebreaker/game.rb	/^module Codebreaker$/;"	m
+Codebreaker	spec/codebreaker/game_spec.rb	/^module Codebreaker$/;"	m
+Game	lib/codebreaker/game.rb	/^  class Game$/;"	c	class:Codebreaker
+Output	features/step_defintions/codebreaker_steps.rb	/^class Output$/;"	c
+exact_match?	lib/codebreaker/game.rb	/^    def exact_match?(guess, index)$/;"	f	class:Codebreaker.Game
+guess	lib/codebreaker/game.rb	/^    def guess(guess)$/;"	f	class:Codebreaker.Game
+initialize	lib/codebreaker/game.rb	/^    def initialize(output)$/;"	f	class:Codebreaker.Game
+messages	features/step_defintions/codebreaker_steps.rb	/^  def messages$/;"	f	class:Output
+number_match?	lib/codebreaker/game.rb	/^    def number_match?(guess, index)$/;"	f	class:Codebreaker.Game
+output	features/step_defintions/codebreaker_steps.rb	/^def output$/;"	f
+puts	features/step_defintions/codebreaker_steps.rb	/^  def puts(message)$/;"	f	class:Output
+start	lib/codebreaker/game.rb	/^    def start(secret)$/;"	f	class:Codebreaker.Game
