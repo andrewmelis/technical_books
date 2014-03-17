@@ -10,6 +10,9 @@
 
 @interface Question : NSObject
 
--(NSDate *)date;
+@property NSDate *date;
+@property NSString *title;
+@property NSInteger score;
+
 
 @end

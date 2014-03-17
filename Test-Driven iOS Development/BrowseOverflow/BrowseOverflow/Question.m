@@ -10,9 +10,4 @@
 
 @implementation Question
 
-- (NSDate *) date
-{
-    return [NSDate date];
-}
-
 @end

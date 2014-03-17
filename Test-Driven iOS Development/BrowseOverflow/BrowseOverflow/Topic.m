@@ -9,12 +9,18 @@
 #import "Topic.h"
 
 @implementation Topic
+{
+    NSArray *questions;
+}
 
 - (id)initWithName:(NSString *)newName tag:(NSString *)newTag
 {
-    if ((self = [super init])) {
+    if ((self = [super init]))
+    {
         _name = [newName copy];
         _tag = [newTag copy];
+        questions = [[NSArray alloc] init];
+
     }
     return self;
 }
@@ -22,6 +28,11 @@
 - (NSArray *)recentQuestions
 {
     return [NSArray array];
+}
+
+- (void)addQuestion: (Question *)question
+{
+    questions = [questions arrayByAddingObject:question];
 }
 
 @end
