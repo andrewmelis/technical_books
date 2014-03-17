@@ -27,20 +27,24 @@
     topic = nil;
 }
 
-- (void)testThatTopicExists {
+- (void)testThatTopicExists
+{
 
     XCTAssertNotNil(topic, @"should be able to create a Topic instance");
 }
 
-- (void)testThatTopicCanBeName {
+- (void)testThatTopicCanBeName
+{
     XCTAssertEqualObjects(topic.name, @"iPhone", @"the Topic should have the name I gave it");
 }
 
--(void)testThatTopicHasATag {
+- (void)testThatTopicHasATag
+{
     XCTAssertEqualObjects(topic.tag, @"iphone", @"Topics need to have tags");
 }
 
--(void)testForAListOfQuestions {
+- (void)testForAListOfQuestions
+{
     XCTAssertTrue([[topic recentQuestions] isKindOfClass: [NSArray class]], @"Topics should provide a list of recent questions");
 }
 

@@ -10,7 +10,8 @@
 
 @implementation Topic
 
-- (id)initWithName:(NSString *)newName tag:(NSString *)newTag {
+- (id)initWithName:(NSString *)newName tag:(NSString *)newTag
+{
     if ((self = [super init])) {
         _name = [newName copy];
         _tag = [newTag copy];
@@ -18,7 +19,8 @@
     return self;
 }
 
-- (NSArray *)recentQuestions {
+- (NSArray *)recentQuestions
+{
     return [NSArray array];
 }
 

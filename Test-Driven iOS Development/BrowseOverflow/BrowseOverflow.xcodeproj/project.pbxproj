@@ -23,6 +23,8 @@
 		2818870118D6A5AB00340DDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 281886FF18D6A5AB00340DDF /* InfoPlist.strings */; };
 		2818870D18D6A8D900340DDF /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818870C18D6A8D900340DDF /* TopicTests.m */; };
 		2818871018D6A93400340DDF /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818870F18D6A93400340DDF /* Topic.m */; };
+		2818871218D6B2FF00340DDF /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818871118D6B2FF00340DDF /* QuestionTests.m */; };
+		2818871518D6B36900340DDF /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818871418D6B36900340DDF /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		2818870C18D6A8D900340DDF /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTests.m; sourceTree = "<group>"; };
 		2818870E18D6A93400340DDF /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
 		2818870F18D6A93400340DDF /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		2818871118D6B2FF00340DDF /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
+		2818871318D6B36900340DDF /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		2818871418D6B36900340DDF /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,8 @@
 				281886DB18D6A5AB00340DDF /* Supporting Files */,
 				2818870E18D6A93400340DDF /* Topic.h */,
 				2818870F18D6A93400340DDF /* Topic.m */,
+				2818871318D6B36900340DDF /* Question.h */,
+				2818871418D6B36900340DDF /* Question.m */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 			children = (
 				281886FD18D6A5AB00340DDF /* Supporting Files */,
 				2818870C18D6A8D900340DDF /* TopicTests.m */,
+				2818871118D6B2FF00340DDF /* QuestionTests.m */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -262,6 +270,7 @@
 				281886E518D6A5AB00340DDF /* AppDelegate.m in Sources */,
 				281886EB18D6A5AB00340DDF /* MasterViewController.m in Sources */,
 				281886E118D6A5AB00340DDF /* main.m in Sources */,
+				2818871518D6B36900340DDF /* Question.m in Sources */,
 				2818871018D6A93400340DDF /* Topic.m in Sources */,
 				281886EE18D6A5AB00340DDF /* DetailViewController.m in Sources */,
 			);
@@ -272,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2818870D18D6A8D900340DDF /* TopicTests.m in Sources */,
+				2818871218D6B2FF00340DDF /* QuestionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
