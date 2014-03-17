@@ -21,7 +21,8 @@
 		281886F818D6A5AB00340DDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281886D418D6A5AA00340DDF /* Foundation.framework */; };
 		281886F918D6A5AB00340DDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281886D818D6A5AA00340DDF /* UIKit.framework */; };
 		2818870118D6A5AB00340DDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 281886FF18D6A5AB00340DDF /* InfoPlist.strings */; };
-		2818870318D6A5AB00340DDF /* BrowseOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818870218D6A5AB00340DDF /* BrowseOverflowTests.m */; };
+		2818870D18D6A8D900340DDF /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818870C18D6A8D900340DDF /* TopicTests.m */; };
+		2818871018D6A93400340DDF /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818870F18D6A93400340DDF /* Topic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,9 @@
 		281886F618D6A5AB00340DDF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		281886FE18D6A5AB00340DDF /* BrowseOverflowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseOverflowTests-Info.plist"; sourceTree = "<group>"; };
 		2818870018D6A5AB00340DDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2818870218D6A5AB00340DDF /* BrowseOverflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseOverflowTests.m; sourceTree = "<group>"; };
+		2818870C18D6A8D900340DDF /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTests.m; sourceTree = "<group>"; };
+		2818870E18D6A93400340DDF /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		2818870F18D6A93400340DDF /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				281886ED18D6A5AB00340DDF /* DetailViewController.m */,
 				281886EF18D6A5AB00340DDF /* Images.xcassets */,
 				281886DB18D6A5AB00340DDF /* Supporting Files */,
+				2818870E18D6A93400340DDF /* Topic.h */,
+				2818870F18D6A93400340DDF /* Topic.m */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -142,8 +147,8 @@
 		281886FC18D6A5AB00340DDF /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
-				2818870218D6A5AB00340DDF /* BrowseOverflowTests.m */,
 				281886FD18D6A5AB00340DDF /* Supporting Files */,
+				2818870C18D6A8D900340DDF /* TopicTests.m */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				281886E518D6A5AB00340DDF /* AppDelegate.m in Sources */,
 				281886EB18D6A5AB00340DDF /* MasterViewController.m in Sources */,
 				281886E118D6A5AB00340DDF /* main.m in Sources */,
+				2818871018D6A93400340DDF /* Topic.m in Sources */,
 				281886EE18D6A5AB00340DDF /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2818870318D6A5AB00340DDF /* BrowseOverflowTests.m in Sources */,
+				2818870D18D6A8D900340DDF /* TopicTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
