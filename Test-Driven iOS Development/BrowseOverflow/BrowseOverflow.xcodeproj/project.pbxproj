@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2800174018D7240A008C0EDA /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800173F18D7240A008C0EDA /* PersonTests.m */; };
 		2800174318D724E9008C0EDA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800174218D724E9008C0EDA /* Person.m */; };
+		2800174518D7E4DD008C0EDA /* AnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800174418D7E4DD008C0EDA /* AnswerTests.m */; };
+		2800174818D7E4F7008C0EDA /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800174718D7E4F7008C0EDA /* Answer.m */; };
 		281886D518D6A5AA00340DDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281886D418D6A5AA00340DDF /* Foundation.framework */; };
 		281886D718D6A5AA00340DDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281886D618D6A5AA00340DDF /* CoreGraphics.framework */; };
 		281886D918D6A5AB00340DDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281886D818D6A5AA00340DDF /* UIKit.framework */; };
@@ -43,6 +45,9 @@
 		2800173F18D7240A008C0EDA /* PersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTests.m; sourceTree = "<group>"; };
 		2800174118D724E9008C0EDA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		2800174218D724E9008C0EDA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2800174418D7E4DD008C0EDA /* AnswerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerTests.m; sourceTree = "<group>"; };
+		2800174618D7E4F7008C0EDA /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		2800174718D7E4F7008C0EDA /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
 		281886D118D6A5AA00340DDF /* BrowseOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		281886D418D6A5AA00340DDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		281886D618D6A5AA00340DDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,6 +148,8 @@
 				2818871418D6B36900340DDF /* Question.m */,
 				2800174118D724E9008C0EDA /* Person.h */,
 				2800174218D724E9008C0EDA /* Person.m */,
+				2800174618D7E4F7008C0EDA /* Answer.h */,
+				2800174718D7E4F7008C0EDA /* Answer.m */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 			children = (
 				281886FD18D6A5AB00340DDF /* Supporting Files */,
 				2818870C18D6A8D900340DDF /* TopicTests.m */,
+				2800174418D7E4DD008C0EDA /* AnswerTests.m */,
 				2800173F18D7240A008C0EDA /* PersonTests.m */,
 				2818871118D6B2FF00340DDF /* QuestionTests.m */,
 			);
@@ -278,6 +286,7 @@
 				281886E518D6A5AB00340DDF /* AppDelegate.m in Sources */,
 				281886EB18D6A5AB00340DDF /* MasterViewController.m in Sources */,
 				2800174318D724E9008C0EDA /* Person.m in Sources */,
+				2800174818D7E4F7008C0EDA /* Answer.m in Sources */,
 				281886E118D6A5AB00340DDF /* main.m in Sources */,
 				2818871518D6B36900340DDF /* Question.m in Sources */,
 				2818871018D6A93400340DDF /* Topic.m in Sources */,
@@ -292,6 +301,7 @@
 				2800174018D7240A008C0EDA /* PersonTests.m in Sources */,
 				2818870D18D6A8D900340DDF /* TopicTests.m in Sources */,
 				2818871218D6B2FF00340DDF /* QuestionTests.m in Sources */,
+				2800174518D7E4DD008C0EDA /* AnswerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

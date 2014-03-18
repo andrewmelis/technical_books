@@ -15,7 +15,9 @@
 @property (readonly) NSString *tag;
 
 - (id)initWithName:(NSString *)newName tag:(NSString *)newTag;
+- (NSArray *)sortedQuestionsLatestFirst: (NSArray *)questionList;
 - (NSArray *) recentQuestions;
 - (void)addQuestion: (Question *)question;
+- (NSArray *)reduceQuestionListToMaxSize: (NSArray *)questionList;
 
 @end
