@@ -72,4 +72,17 @@
     XCTAssertEqual([otherAnswer compare: answer], NSOrderedAscending, @"Unaccepted answer should come last");
 }
 
+- (void)testAnswersWithEqualScoresCompareEqually
+{
+    XCTAssertEqual([answer compare:otherAnswer], NSOrderedSame, @"Both answers of equal rank");
+    XCTAssertEqual([otherAnswer compare:answer], NSOrderedSame, @"Each answer has the same rank");
+}
+
+- (void)testLowerScoringAnswerComesAfterHigher
+{
+    otherAnswer.score = answer.score + 10;
+    XCTAssertEqual([answer compare:otherAnswer], NSOrderedDescending, @"Higher score comes first");
+    XCTAssertEqual([otherAnswer compare:answer], NSOrderedAscending, @"Lower score comes last");
+}
+
 @end

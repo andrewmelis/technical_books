@@ -8,10 +8,13 @@
 
 #import <XCTest/XCTest.h>
 #import "Question.h"
+#import "Answer.h"
 
 @interface QuestionTests : XCTestCase
 {
     Question *question;
+    Answer *lowScore;
+    Answer *highScore;
 }
 
 @end
@@ -24,6 +27,11 @@
     question.date = [NSDate distantPast];
     question.title = @"Do iPhones also dream of electric sheep?";
     question.score = 42;
+    
+    Answer *accepted = [[Answer alloc] init];
+    accepted.score = 1;
+    accepted.accepted = YES;
+    [question ad]
     
     
 }
