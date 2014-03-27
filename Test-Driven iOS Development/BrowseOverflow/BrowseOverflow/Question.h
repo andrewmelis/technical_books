@@ -7,12 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Answer;
 
 @interface Question : NSObject
+{
+    NSMutableSet *answerSet;
+}
 
 @property NSDate *date;
 @property NSString *title;
 @property NSInteger score;
+@property (readonly) NSArray *answers;
+
+- (void)addAnswer: (Answer *)answer;
+- (NSArray *)answers;
+
+
 
 
 @end
