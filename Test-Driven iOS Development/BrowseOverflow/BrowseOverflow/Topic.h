@@ -18,6 +18,6 @@
 - (NSArray *)sortedQuestionsLatestFirst: (NSArray *)questionList;
 - (NSArray *) recentQuestions;
 - (void)addQuestion: (Question *)question;
-- (NSArray *)reduceQuestionListToMaxSize: (NSArray *)questionList;
+
 
 @end
