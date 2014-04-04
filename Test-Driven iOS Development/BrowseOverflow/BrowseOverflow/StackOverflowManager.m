@@ -11,6 +11,8 @@
 
 @implementation StackOverflowManager
 
+NSString *StackOverflowManagerError = @"StackOverflowManagerError";
+
 
 - (void)setDelegate:(id<StackOverflowManagerDelegate>)delegate
 {
@@ -30,5 +32,18 @@
     [_communicator searchForQuestionsWithTag:[topic tag]];
     
 }
+
+- (void)searchingForQuestionsFailedWithError:(NSError *)error
+{
+    NSDictionary *errorInfo = [NSDictionary dictionaryWithObject:error forKey:NSUnderlyingErrorKey];
+    NSError *reportableError = [NSError errorWithDomain:StackOverflowManagerError code:StackOverflowManagerErrorQuestionSearchCode userInfo:errorInfo];
+    [_delegate fetchingQuestionsFailedWithError:reportableError];
+}
+
+- (void)receiveQuestionsJSON:(NSString *)objectNotation
+{
+    NSArray *questions = [_questionBuilder questionsFromJSON: objectNotation error: NULL];
+}
+
 
 @end
