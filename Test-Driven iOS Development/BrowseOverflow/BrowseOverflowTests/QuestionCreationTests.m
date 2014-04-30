@@ -19,9 +19,10 @@
 
 @implementation QuestionCreationTests
 {
-    StackOverflowManager *mgr;
-    MockStackOverflowManagerDelegate *delegate;
-    NSError *underlyingError;
+    @private
+        StackOverflowManager *mgr;
+        MockStackOverflowManagerDelegate *delegate;
+        NSError *underlyingError;
 }
 
 - (void)setUp
@@ -35,6 +36,8 @@
 - (void)tearDown
 {
     mgr = nil;
+    delegate = nil;
+    underlyingError = nil;
 }
 
 - (void)testConformingObjectCanBeDelegate
@@ -76,6 +79,17 @@
     mgr.questionBuilder = builder;
     [mgr receiveQuestionsJSON: @"Fake JSON"];
     XCTAssertEqualObjects(builder.JSON, @"Fake JSON", @"Downloaded JSON is set to the builder");
+    mgr.questionBuilder = nil;
+}
+
+- (void)testDelegateNotifiedOfErrorWhenQuestionBuilderFails
+{
+    FakeQuestionBuilder *builder = [[FakeQuestionBuilder alloc] init];
+    builder.arrayToReturn = nil;
+    builder.errorToSet = underlyingError;
+    mgr.questionBuilder = builder;
+    [mgr receiveQuestionsJSON: @"Fake JSON"];
+    XCTAssertNotNil([[[delegate fetchError] userInfo] objectForKey: NSUnderlyingErrorKey], @"The delegate should have found out about the error"     );
     mgr.questionBuilder = nil;
 }
 
