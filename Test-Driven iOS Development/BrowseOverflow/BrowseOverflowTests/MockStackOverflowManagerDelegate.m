@@ -15,4 +15,9 @@
     _fetchError = error;
 }
 
+- (void) didReceiveQuestions:(NSArray *)questions
+{
+    _receivedQuestions = questions;
+}
+
 @end
