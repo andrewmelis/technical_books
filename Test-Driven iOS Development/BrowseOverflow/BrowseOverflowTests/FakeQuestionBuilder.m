@@ -13,8 +13,10 @@
 - (NSArray *)questionsFromJSON:(NSString *)objectNotation error:(NSError **)error
 {
     _JSON = objectNotation;
-    return nil;
+    *error = _errorToSet;
+    return _arrayToReturn;
 }
 
 
 @end
+

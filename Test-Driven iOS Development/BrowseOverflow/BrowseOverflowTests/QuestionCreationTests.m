@@ -30,7 +30,7 @@
     mgr = [[StackOverflowManager alloc] init];
     delegate = [[MockStackOverflowManagerDelegate alloc] init];
     mgr.delegate = delegate;
-    underlyingError = [NSError errorWithDomain:@"Test Domain" code:0 userInfo:nil];
+    underlyingError = [NSError errorWithDomain: @"Test Domain" code: 0 userInfo: nil];
 }
 
 - (void)tearDown
@@ -77,7 +77,7 @@
 {
     FakeQuestionBuilder *builder = [[FakeQuestionBuilder alloc] init];
     mgr.questionBuilder = builder;
-    [mgr receiveQuestionsJSON: @"Fake JSON"];
+    [mgr receivedQuestionsJSON: @"Fake JSON"];
     XCTAssertEqualObjects(builder.JSON, @"Fake JSON", @"Downloaded JSON is set to the builder");
     mgr.questionBuilder = nil;
 }
@@ -88,8 +88,8 @@
     builder.arrayToReturn = nil;
     builder.errorToSet = underlyingError;
     mgr.questionBuilder = builder;
-    [mgr receiveQuestionsJSON: @"Fake JSON"];
-    XCTAssertNotNil([[[delegate fetchError] userInfo] objectForKey: NSUnderlyingErrorKey], @"The delegate should have found out about the error"     );
+    [mgr receivedQuestionsJSON: @"Fake JSON"];
+    XCTAssertNotNil([[[delegate fetchError] userInfo] objectForKey: NSUnderlyingErrorKey], @"The delegate should have found out about the error" );
     mgr.questionBuilder = nil;
 }
 

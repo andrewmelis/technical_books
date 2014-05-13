@@ -29,7 +29,7 @@ enum
 
 - (void)searchingForQuestionsFailedWithError:(NSError *)error;
 - (void)fetchQuestionsOnTopic: (Topic *)topic;
-- (void)receiveQuestionsJSON:(NSString *)objectNotation;
+- (void)receivedQuestionsJSON:(NSString *)objectNotation;
 
 
 @end
