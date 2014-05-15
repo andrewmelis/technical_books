@@ -14,11 +14,11 @@
 #import "Topic.h"
 #import "Question.h"
 
-@interface QuestionCreationTests : XCTestCase
+@interface QuestionCreationWorkflowTests : XCTestCase
 
 @end
 
-@implementation QuestionCreationTests
+@implementation QuestionCreationWorkflowTests
 {
 @private
     StackOverflowManager *mgr;

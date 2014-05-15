@@ -19,7 +19,6 @@
 @property (strong) StackOverflowCommunicator *communicator;
 @property (strong) QuestionBuilder *questionBuilder;
 
-
 extern NSString *StackOverflowManagerError;
 
 enum

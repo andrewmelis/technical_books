@@ -12,4 +12,12 @@
 
 - (NSArray *)questionsFromJSON: (NSString *)objectNotation error: (NSError **)error;
 
+extern NSString *QuestionBuilderErrorDomain;
+
+enum
+{
+    QuestionBuilderInvalidJSONError,
+    QuestionBuilderMissingDataError,
+};
+
 @end
