@@ -22,7 +22,7 @@
 }
 
 static NSString *questionJSON =
-@"{\"tags\":[\"ios\",\"iphone\",\"iads\"],\"owner\":{\"reputation\":106,\"user_id\":3597877,\"user_type\":\"registered\",\"profile_image\":\"http://i.stack.imgur.com/1r3pH.png?s=128&g=1\",\"display_name\":\"GlennRay\",\"link\":\"http://stackoverflow.com/users/3597877/glennray\"},\"is_answered\":false,\"view_count\":13,\"answer_count\":1,\"score\":0,\"last_activity_date\":1400180163,\"creation_date\":1400177211,\"question_id\":23685631,\"link\":\"http://stackoverflow.com/questions/23685631/how-can-i-tell-if-iads-are-being-requested\",\"title\":\"How can I tell if iAds are being requested?\"}";
+@"{\"items\":[{\"tags\":[\"ios\",\"iphone\",\"iads\"],\"owner\":{\"reputation\":106,\"user_id\":3597877,\"user_type\":\"registered\",\"profile_image\":\"http://i.stack.imgur.com/1r3pH.png?s=128&g=1\",\"display_name\":\"GlennRay\",\"link\":\"http://stackoverflow.com/users/3597877/glennray\"},\"is_answered\":false,\"view_count\":13,\"answer_count\":1,\"score\":0,\"last_activity_date\":1400180163,\"creation_date\":1400177211,\"question_id\":23685631,\"link\":\"http://stackoverflow.com/questions/23685631/how-can-i-tell-if-iads-are-being-requested\",\"title\":\"How can I tell if iAds are being requested?\"}],\"has_more\":false,\"quota_max\":300,\"quota_remaining\":249}";
 
 - (void)setUp
 {
@@ -72,6 +72,14 @@ static NSString *questionJSON =
     NSError *error = nil;
     NSArray *questions = [questionBuilder questionsFromJSON:questionJSON error:&error];
     XCTAssertEqual([questions count], (NSUInteger)1, @"The builder should have created a question");
+}
+
+- (void)testQuestionsCreatedFromJSONHasPropertiesPresentedInJSON
+{
+    XCTAssertEqual([question.date timeIntervalSince1970], 1400177211, @"The date of the question should match the data");
+    XCTAssertEqualObjects(question.title, @"How can I tell if iAds are being requested?", @"The title of the question should match the provided data");
+    XCTAssertEqual(question.score, 0, @"Score should match the data");
+    
 }
 
 @end
