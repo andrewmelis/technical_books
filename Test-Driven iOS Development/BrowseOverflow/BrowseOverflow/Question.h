@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class Answer;
+@class Person;
 
 @interface Question : NSObject
 {
@@ -17,7 +18,11 @@
 @property NSDate *date;
 @property NSString *title;
 @property NSInteger score;
+@property NSInteger questionID;
 @property (readonly) NSArray *answers;
+@property Person *asker;
+@property (copy) NSString *body;
+
 
 - (void)addAnswer: (Answer *)answer;
 - (NSArray *)answers;

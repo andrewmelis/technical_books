@@ -12,23 +12,28 @@
 #import "QuestionBuilder.h"
 
 @class Topic;
+@class Question;
 
 @interface StackOverflowManager : NSObject
 
 @property (weak,nonatomic) id<StackOverflowManagerDelegate> delegate;
 @property (strong) StackOverflowCommunicator *communicator;
 @property (strong) QuestionBuilder *questionBuilder;
+@property (strong) Question *questionNeedingBody;
+
+- (void)receivedQuestionsJSON:(NSString *)objectNotation;
+- (void)fetchQuestionsOnTopic: (Topic *)topic;
+- (void)searchingForQuestionsFailedWithError:(NSError *)error;
+- (void)fetchBodyForQuestion:(Question *)question;
+- (void)fetchingQuestionBodyFailedWithError:(NSError *)error;
+- (void)receivedQuestionBodyJSON:(NSString *)objectNotation;
 
 extern NSString *StackOverflowManagerError;
 
 enum
 {
-    StackOverflowManagerErrorQuestionSearchCode
+    StackOverflowManagerErrorQuestionSearchCode,
+    StackOverflowManagerErrorQuestionBodyFetchCode
 };
-
-- (void)searchingForQuestionsFailedWithError:(NSError *)error;
-- (void)fetchQuestionsOnTopic: (Topic *)topic;
-- (void)receivedQuestionsJSON:(NSString *)objectNotation;
-
 
 @end

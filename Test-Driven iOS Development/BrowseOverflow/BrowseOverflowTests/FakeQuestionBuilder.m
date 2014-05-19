@@ -19,5 +19,13 @@
     return _arrayToReturn;
 }
 
+- (void)fillInDetailsForQuestion:(Question *)question fromJSON:(NSString *)objectNotation
+{
+    _JSON = objectNotation;
+    if (question) {
+        _questionToFill = question;
+    }
+}
+
 
 @end

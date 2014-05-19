@@ -8,6 +8,8 @@
 
 #import "QuestionBuilder.h"
 #import "Question.h"
+#import "PersonBuilder.h"
+#import "Person.h"
 
 @implementation QuestionBuilder
 
@@ -37,7 +39,6 @@ NSString *QuestionBuilderErrorDomain = @"QuestionBuilderErrorDomain";
     }
     
     return [self createQuestionsArrayFrom:jsonQuestions];
-
 }
 
 
@@ -51,12 +52,39 @@ NSString *QuestionBuilderErrorDomain = @"QuestionBuilderErrorDomain";
         thisQuestion.date = [NSDate dateWithTimeIntervalSince1970:[[parsedQuestion objectForKey:@"creation_date"] doubleValue]];
         thisQuestion.title = [parsedQuestion objectForKey:@"title"];
         thisQuestion.score = [[parsedQuestion objectForKey:@"score"] integerValue];
+        thisQuestion.questionID = [[parsedQuestion objectForKey:@"question_id"] integerValue];
+    
+        NSDictionary *parsedAsker = [parsedQuestion objectForKey:@"owner"];
+        thisQuestion.asker = [PersonBuilder personFromDictionary:parsedAsker];
         
         [questions addObject:thisQuestion];
     }
     
     return questions;
 }
+
+- (void)fillInDetailsForQuestion:(Question *)question fromJSON:(NSString *)objectNotation
+{
+    NSParameterAssert(question != nil);
+    NSParameterAssert(objectNotation != nil);
+    
+    NSData *unicodeNotation = [objectNotation dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:unicodeNotation options:0 error:NULL];
+    
+    if (![parsedObject isKindOfClass:[NSDictionary class]])
+    {
+        return;
+    }
+    
+    NSString *questionBody = [[[parsedObject objectForKey:@"items"] lastObject] objectForKey:@"body"];
+    
+    if (questionBody)
+    {
+        question.body = questionBody;
+    }
+}
+
+
 
 
 @end
