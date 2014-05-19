@@ -35,6 +35,8 @@
 		2818871218D6B2FF00340DDF /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818871118D6B2FF00340DDF /* QuestionTests.m */; };
 		2818871518D6B36900340DDF /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818871418D6B36900340DDF /* Question.m */; };
 		4B0C03A0192AAE7300488DEE /* PersonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C039F192AAE7300488DEE /* PersonBuilder.m */; };
+		4B0C03A3192AB32600488DEE /* AnswerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C03A2192AB32600488DEE /* AnswerBuilder.m */; };
+		4B0C03A5192AB33900488DEE /* AnswerBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C03A4192AB33900488DEE /* AnswerBuilderTests.m */; };
 		4B56FD6318EF64CC00D3A0B7 /* StackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800581918E7775B0051B5E5 /* StackOverflowManager.m */; };
 		4B56FD6418EF64DA00D3A0B7 /* StackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800582318E786420051B5E5 /* StackOverflowCommunicator.m */; };
 		4B56FD6718EF67E900D3A0B7 /* QuestionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B56FD6618EF67E900D3A0B7 /* QuestionBuilder.m */; };
@@ -97,6 +99,9 @@
 		2818871418D6B36900340DDF /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		4B0C039E192AAE7300488DEE /* PersonBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonBuilder.h; sourceTree = "<group>"; };
 		4B0C039F192AAE7300488DEE /* PersonBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonBuilder.m; sourceTree = "<group>"; };
+		4B0C03A1192AB32600488DEE /* AnswerBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerBuilder.h; sourceTree = "<group>"; };
+		4B0C03A2192AB32600488DEE /* AnswerBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerBuilder.m; sourceTree = "<group>"; };
+		4B0C03A4192AB33900488DEE /* AnswerBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerBuilderTests.m; sourceTree = "<group>"; };
 		4B56FD6518EF67E900D3A0B7 /* QuestionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionBuilder.h; sourceTree = "<group>"; };
 		4B56FD6618EF67E900D3A0B7 /* QuestionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionBuilder.m; sourceTree = "<group>"; };
 		4B56FD6818EF685400D3A0B7 /* FakeQuestionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeQuestionBuilder.h; sourceTree = "<group>"; };
@@ -166,6 +171,8 @@
 				4B56FD6618EF67E900D3A0B7 /* QuestionBuilder.m */,
 				4B0C039E192AAE7300488DEE /* PersonBuilder.h */,
 				4B0C039F192AAE7300488DEE /* PersonBuilder.m */,
+				4B0C03A1192AB32600488DEE /* AnswerBuilder.h */,
+				4B0C03A2192AB32600488DEE /* AnswerBuilder.m */,
 			);
 			name = "Application Logic";
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 				4BB0B0351925254C001CA285 /* Application Mocks and Fakes */,
 				2800581618E774ED0051B5E5 /* QuestionCreationWorkflowTests.m */,
 				4BB0B03319252538001CA285 /* QuestionBuilderTests.m */,
+				4B0C03A4192AB33900488DEE /* AnswerBuilderTests.m */,
 			);
 			name = "Application Logic Tests";
 			sourceTree = "<group>";
@@ -379,6 +387,7 @@
 				2800174818D7E4F7008C0EDA /* Answer.m in Sources */,
 				281886E118D6A5AB00340DDF /* main.m in Sources */,
 				2818871518D6B36900340DDF /* Question.m in Sources */,
+				4B0C03A3192AB32600488DEE /* AnswerBuilder.m in Sources */,
 				4B0C03A0192AAE7300488DEE /* PersonBuilder.m in Sources */,
 				2818871018D6A93400340DDF /* Topic.m in Sources */,
 				2800581A18E7775B0051B5E5 /* StackOverflowManager.m in Sources */,
@@ -391,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB0B03419252538001CA285 /* QuestionBuilderTests.m in Sources */,
+				4B0C03A5192AB33900488DEE /* AnswerBuilderTests.m in Sources */,
 				2800581718E774ED0051B5E5 /* QuestionCreationWorkflowTests.m in Sources */,
 				2800174018D7240A008C0EDA /* PersonTests.m in Sources */,
 				2800582918E7867E0051B5E5 /* MockStackOverflowCommunicator.m in Sources */,
