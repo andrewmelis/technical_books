@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class Question;
+
 @interface AnswerBuilder : NSObject
 
-- (NSArray *)questionsFromJSON: (NSString *)objectNotation error: (NSError **)error;
+- (BOOL)addAnswersToQuestion:(Question *)question fromJSON:(NSString *)objectNotation error:(NSError **)error;
 
 @end

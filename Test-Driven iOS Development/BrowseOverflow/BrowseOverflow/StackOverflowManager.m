@@ -78,8 +78,38 @@ NSString *StackOverflowManagerError = @"StackOverflowManagerError";
 - (void)receivedQuestionBodyJSON:(NSString *)objectNotation
 {
     [_questionBuilder fillInDetailsForQuestion:_questionNeedingBody fromJSON:objectNotation];
+}
 
+- (void)fetchAnswersForQuestion:(Question *)question
+{
+    self.questionNeedingAnswers = question;
+    [_communicator searchForAnswersForQuestionWithID:question.questionID];
+}
 
+- (void)fetchingQuestionAnswersFailedWithError:(NSError *)error
+{
+    NSDictionary *errorInfo = nil;
+    if (error)
+    {
+        errorInfo = [NSDictionary dictionaryWithObject:error forKey:NSUnderlyingErrorKey];
+    }
+    NSError *reportableError = [NSError errorWithDomain:StackOverflowManagerError code:StackOverflowManagerErrorAnswerFetchCode userInfo:errorInfo];
+    [_delegate fetchingAnswersFailedWithError:reportableError];
+    self.questionNeedingBody = nil;
+}
+
+- (void)receivedAnswerJSON:(NSString *)objectNotation
+{
+    NSError *error = nil;
+    if ([_answerBuilder addAnswersToQuestion:_questionNeedingAnswers fromJSON:objectNotation error:&error])
+    {
+        [_delegate answersReceivedForQuestion:_questionNeedingAnswers];
+        _questionNeedingAnswers = nil;
+    }
+    else
+    {
+        [self fetchingQuestionAnswersFailedWithError:error];
+    }
 }
 
 

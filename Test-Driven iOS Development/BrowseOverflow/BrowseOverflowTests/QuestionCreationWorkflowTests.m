@@ -90,10 +90,8 @@
 
 - (void)testQuestionJSONIsPassedToQuestionBuilder
 {
-    mgr.questionBuilder = questionBuilder;
     [mgr receivedQuestionsJSON: @"Fake JSON"];
     XCTAssertEqualObjects(questionBuilder.JSON, @"Fake JSON", @"Downloaded JSON is set to the builder");
-    mgr.questionBuilder = nil;
 }
 
 - (void)testDelegateNotifiedOfErrorWhenQuestionBuilderFails
@@ -102,7 +100,6 @@
     questionBuilder.errorToSet = underlyingError;
     [mgr receivedQuestionsJSON: @"Fake JSON"];
     XCTAssertNotNil([[[delegate fetchError] userInfo] objectForKey: NSUnderlyingErrorKey], @"The delegate should have found out about the error" );
-    mgr.questionBuilder = nil;
 }
 
 - (void)testDelegateNotToldAboutErrorWhenQuestionReceived

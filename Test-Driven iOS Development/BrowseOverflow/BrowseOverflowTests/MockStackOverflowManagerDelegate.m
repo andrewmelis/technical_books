@@ -10,7 +10,7 @@
 
 @implementation MockStackOverflowManagerDelegate
 
-- (void) fetchingQuestionsFailedWithError: (NSError *)error
+- (void)fetchingQuestionsFailedWithError: (NSError *)error
 {
     _fetchError = error;
 }
@@ -20,7 +20,7 @@
     _fetchError = error;
 }
 
-- (void) didReceiveQuestions:(NSArray *)questions
+- (void)didReceiveQuestions:(NSArray *)questions
 {
     _receivedQuestions = questions;
 }
@@ -29,5 +29,17 @@
 {
     _bodyQuestion = question;
 }
+
+- (void)answersReceivedForQuestion:(Question *)question
+{
+    _questionWithAnswers = question;
+}
+
+- (void)fetchingAnswersFailedWithError:(NSError *)error
+{
+    _fetchError = error;
+}
+
+
 
 @end

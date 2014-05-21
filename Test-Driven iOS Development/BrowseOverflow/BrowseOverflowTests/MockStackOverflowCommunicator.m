@@ -13,6 +13,7 @@
 {
     BOOL wasAskedToFetchQuestions;
     BOOL wasAskedToFetchBody;
+    BOOL wasAskedToFetchAnswers;
 }
 
 - (void)searchForQuestionsWithTag:(NSString *)tag
@@ -33,6 +34,16 @@
 - (BOOL)wasAskedToFetchBody
 {
     return wasAskedToFetchBody;
+}
+
+- (void)searchForAnswersForQuestionWithID:(NSInteger)questionID
+{
+    wasAskedToFetchAnswers = YES;
+}
+
+- (BOOL)wasAskedToFetchAnswers
+{
+    return wasAskedToFetchAnswers;
 }
 
 @end

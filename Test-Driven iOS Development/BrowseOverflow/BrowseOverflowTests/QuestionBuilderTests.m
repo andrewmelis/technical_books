@@ -120,7 +120,7 @@ static NSString *emptyQuestionsArray = @"{ \"questions\": [] }";
 {
     [questionBuilder fillInDetailsForQuestion:question fromJSON:noQuestionsJSONString];
     XCTAssertNil(question.body, @"There was no body to add");
-}
+                    }
 
 - (void)testBodyContainedInJSONIsAddedToQuestion
 {
