@@ -188,8 +188,8 @@
 				4BB0B0351925254C001CA285 /* Application Mocks and Fakes */,
 				2800581618E774ED0051B5E5 /* QuestionCreationWorkflowTests.m */,
 				4BB0B03319252538001CA285 /* QuestionBuilderTests.m */,
-				4B0C03A4192AB33900488DEE /* AnswerBuilderTests.m */,
 				4BA52950192BAC3600615B58 /* AnswerCreationWorkflowTests.m */,
+				4B0C03A4192AB33900488DEE /* AnswerBuilderTests.m */,
 			);
 			name = "Application Logic Tests";
 			sourceTree = "<group>";

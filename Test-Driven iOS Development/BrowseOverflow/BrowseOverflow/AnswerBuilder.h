@@ -14,4 +14,13 @@
 
 - (BOOL)addAnswersToQuestion:(Question *)question fromJSON:(NSString *)objectNotation error:(NSError **)error;
 
+extern NSString *AnswerBuilderErrorDomain;
+
+enum
+{
+    AnswerBuilderInvalidJSONError,
+    AnswerBuilderMissingDataError,
+};
+
+
 @end

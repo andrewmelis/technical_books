@@ -27,7 +27,7 @@ static NSString *questionJSON =
 
 static NSString *stringIsNotJSON = @"Not JSON";
 static NSString *noQuestionsJSONString = @"{ \"noquestions\": true }";
-static NSString *emptyQuestionsArray = @"{ \"questions\": [] }";
+static NSString *emptyQuestionsArray = @"{ \"items\": [] }";
 
 
 
@@ -68,7 +68,7 @@ static NSString *emptyQuestionsArray = @"{ \"questions\": [] }";
 
 - (void)testRealJSONWithoutQuestionsArrayReturnsMissingDataError
 {
-    NSString *jsonString = @"{ \"noquestions\": true}";
+    NSString *jsonString = noQuestionsJSONString;
     NSError *error = nil;
     [questionBuilder questionsFromJSON:jsonString error:&error];
     XCTAssertEqual([error code], QuestionBuilderMissingDataError, @"This case should not be an invalid JSON error");

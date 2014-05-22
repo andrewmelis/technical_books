@@ -23,11 +23,7 @@
 @property Person *asker;
 @property (copy) NSString *body;
 
-
 - (void)addAnswer: (Answer *)answer;
 - (NSArray *)answers;
-
-
-
 
 @end
