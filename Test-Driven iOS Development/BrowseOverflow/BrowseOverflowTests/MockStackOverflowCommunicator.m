@@ -21,7 +21,7 @@
     wasAskedToFetchQuestions = YES;
 }
 
-- (BOOL)wasAskedToFetchQuestions
+- (BOOL)wasAskedToFetchQuestions 
 {
     return wasAskedToFetchQuestions;
 }

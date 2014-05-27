@@ -41,14 +41,20 @@ NSString *AnswerBuilderErrorDomain = @"AnswerBuilderErrorDomain";
         return NO;
     }
     
+    [self addAnswers:jsonAnswers toQuestion:question];
+    
+    return YES;
+}
+
+- (void)addAnswers:(NSArray *)jsonAnswers toQuestion:(Question *)question
+{
     NSMutableArray *answers = [self createAnswersArrayFrom:jsonAnswers];
     
     for (Answer *answer in answers) {
         [question addAnswer:answer];
     }
-    
-    return YES;
 }
+
 
 - (NSMutableArray *)createAnswersArrayFrom:(NSArray *)jsonAnswers
 {
