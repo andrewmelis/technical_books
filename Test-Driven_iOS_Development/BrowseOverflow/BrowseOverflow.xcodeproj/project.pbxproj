@@ -45,6 +45,7 @@
 		4BAA8EC21934E1E70031F363 /* StackOverflowCommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAA8EC11934E1E70031F363 /* StackOverflowCommunicatorTests.m */; };
 		4BACCACF192CF1030020886C /* FakeAnswerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BACCACE192CF1030020886C /* FakeAnswerBuilder.m */; };
 		4BB0B03419252538001CA285 /* QuestionBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0B03319252538001CA285 /* QuestionBuilderTests.m */; };
+		4BDE9E2A19353AE200D74D19 /* InspectableStackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE9E2919353AE200D74D19 /* InspectableStackOverflowCommunicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,8 @@
 		4BACCACD192CF1030020886C /* FakeAnswerBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeAnswerBuilder.h; sourceTree = "<group>"; };
 		4BACCACE192CF1030020886C /* FakeAnswerBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeAnswerBuilder.m; sourceTree = "<group>"; };
 		4BB0B03319252538001CA285 /* QuestionBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionBuilderTests.m; sourceTree = "<group>"; };
+		4BDE9E2819353AE200D74D19 /* InspectableStackOverflowCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectableStackOverflowCommunicator.h; sourceTree = "<group>"; };
+		4BDE9E2919353AE200D74D19 /* InspectableStackOverflowCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectableStackOverflowCommunicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				4BAA8EC11934E1E70031F363 /* StackOverflowCommunicatorTests.m */,
+				4BDE9E2B1935476A00D74D19 /* Network Mocks */,
 			);
 			name = "Networking Tests";
 			sourceTree = "<group>";
@@ -296,6 +300,15 @@
 				4BACCACE192CF1030020886C /* FakeAnswerBuilder.m */,
 			);
 			name = "Application Mocks and Fakes";
+			sourceTree = "<group>";
+		};
+		4BDE9E2B1935476A00D74D19 /* Network Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE9E2819353AE200D74D19 /* InspectableStackOverflowCommunicator.h */,
+				4BDE9E2919353AE200D74D19 /* InspectableStackOverflowCommunicator.m */,
+			);
+			name = "Network Mocks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,7 +419,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/Users/andrewmeils/Dev/personal/technical_books/Test-Driven_iOS_Development/BrowseOverflow/XcodeCoverage/exportenv.sh";
+			shellScript = XcodeCoverage/exportenv.sh;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -441,6 +454,7 @@
 				4BAA8EC21934E1E70031F363 /* StackOverflowCommunicatorTests.m in Sources */,
 				2800174018D7240A008C0EDA /* PersonTests.m in Sources */,
 				4BACCACF192CF1030020886C /* FakeAnswerBuilder.m in Sources */,
+				4BDE9E2A19353AE200D74D19 /* InspectableStackOverflowCommunicator.m in Sources */,
 				2800582918E7867E0051B5E5 /* MockStackOverflowCommunicator.m in Sources */,
 				2818870D18D6A8D900340DDF /* TopicTests.m in Sources */,
 				2818871218D6B2FF00340DDF /* QuestionTests.m in Sources */,
@@ -511,6 +525,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -568,6 +584,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
 				INFOPLIST_FILE = "BrowseOverflow/BrowseOverflow-Info.plist";
@@ -602,8 +620,8 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -626,7 +644,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
 				INFOPLIST_FILE = "BrowseOverflowTests/BrowseOverflowTests-Info.plist";

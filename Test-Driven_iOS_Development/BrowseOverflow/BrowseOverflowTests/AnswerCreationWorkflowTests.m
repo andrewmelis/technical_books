@@ -1,11 +1,3 @@
-//
-//  AnswerCreationWorkflowTests.m
-//  BrowseOverflow
-//
-//  Created by Andrew Melis on 5/20/14.
-//  Copyright (c) 2014 Baller Status Inc. All rights reserved.
-//
-
 #import <XCTest/XCTest.h>
 
 #import "FakeAnswerBuilder.h"
