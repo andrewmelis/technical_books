@@ -39,6 +39,8 @@
 {
     [_communicator searchForAnswersForQuestionWithID:12345678];
     XCTAssertEqualObjects([[_communicator URLToFetch] absoluteString], @"http://api.stackexchange.com/2.2/questions/12345678/answers?body=true&site=stackoverflow", @"Use the question API to get answers on a given question" );
+    
+    //test
 }
 
 @end

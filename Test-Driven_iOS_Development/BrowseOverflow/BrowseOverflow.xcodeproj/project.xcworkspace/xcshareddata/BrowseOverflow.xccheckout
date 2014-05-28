@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D21632C0-048B-454E-8195-C027E4872393</string>
+	<string>1854A5C4-4E31-4158-A6AC-412C3C0F917C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BrowseOverflow</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5DE5F7BD-6D27-4B6C-8BE4-31AA2C6078C5</key>
-		<string>https://github.com/andrewmelis/technical_books</string>
+		<key>BF106E79-9739-4EB9-A189-2AA688A36ADD</key>
+		<string>https://github.com/andrewmelis/technical_books.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Test-Driven iOS Development/BrowseOverflow/BrowseOverflow.xcodeproj/project.xcworkspace</string>
+	<string>Test-Driven_iOS_Development/BrowseOverflow/BrowseOverflow.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5DE5F7BD-6D27-4B6C-8BE4-31AA2C6078C5</key>
+		<key>BF106E79-9739-4EB9-A189-2AA688A36ADD</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/andrewmelis/technical_books</string>
+	<string>https://github.com/andrewmelis/technical_books.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5DE5F7BD-6D27-4B6C-8BE4-31AA2C6078C5</string>
+	<string>BF106E79-9739-4EB9-A189-2AA688A36ADD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5DE5F7BD-6D27-4B6C-8BE4-31AA2C6078C5</string>
+			<string>BF106E79-9739-4EB9-A189-2AA688A36ADD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>technical_books</string>
 		</dict>
