@@ -573,7 +573,7 @@
 				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
 				INFOPLIST_FILE = "BrowseOverflow/BrowseOverflow-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DDD3FAF5-350E-45F5-AB63-FDE8A913E0A1";
+				PROVISIONING_PROFILE = "BAF892BA-3585-4340-A61A-E57228E82226";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -589,7 +589,7 @@
 				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
 				INFOPLIST_FILE = "BrowseOverflow/BrowseOverflow-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DDD3FAF5-350E-45F5-AB63-FDE8A913E0A1";
+				PROVISIONING_PROFILE = "BAF892BA-3585-4340-A61A-E57228E82226";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
