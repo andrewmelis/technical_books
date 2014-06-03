@@ -8,4 +8,10 @@
     return fetchingURL;
 }
 
+- (NSURLConnection *)currentURLConnection
+{
+    return fetchingConnection;
+}
+
+
 @end
