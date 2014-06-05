@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28D74C3319401C1400D91F7C /* NonNetworkedStackOverflowCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D74C3219401C1400D91F7C /* NonNetworkedStackOverflowCommunicator.swift */; };
+		28D74C35194027C300D91F7C /* NonNetworkedStackOverflowCommunicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D74C34194027C300D91F7C /* NonNetworkedStackOverflowCommunicatorTests.swift */; };
 		4B056D86193FC3D700A28161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B056D85193FC3D700A28161 /* AppDelegate.swift */; };
 		4B056D88193FC3D700A28161 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B056D87193FC3D700A28161 /* MasterViewController.swift */; };
 		4B056D8A193FC3D700A28161 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B056D89193FC3D700A28161 /* DetailViewController.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28D74C3219401C1400D91F7C /* NonNetworkedStackOverflowCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonNetworkedStackOverflowCommunicator.swift; sourceTree = "<group>"; };
+		28D74C34194027C300D91F7C /* NonNetworkedStackOverflowCommunicatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonNetworkedStackOverflowCommunicatorTests.swift; sourceTree = "<group>"; };
 		4B056D80193FC3D700A28161 /* BrowseOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B056D84193FC3D700A28161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B056D85193FC3D700A28161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 			children = (
 				4B056E3F193FCB7800A28161 /* InspectableStackOverflowCommunicator.h */,
 				4B056E40193FCB7800A28161 /* InspectableStackOverflowCommunicator.m */,
+				28D74C3219401C1400D91F7C /* NonNetworkedStackOverflowCommunicator.swift */,
+				28D74C34194027C300D91F7C /* NonNetworkedStackOverflowCommunicatorTests.swift */,
 			);
 			name = "Networking Fakes";
 			sourceTree = "<group>";
@@ -428,12 +434,14 @@
 				4B056E56193FCB7800A28161 /* QuestionTests.m in Sources */,
 				4B056E55193FCB7800A28161 /* QuestionCreationWorkflowTests.m in Sources */,
 				4B056E53193FCB7800A28161 /* PersonTests.m in Sources */,
+				28D74C35194027C300D91F7C /* NonNetworkedStackOverflowCommunicatorTests.swift in Sources */,
 				4B056E4E193FCB7800A28161 /* FakeAnswerBuilder.m in Sources */,
 				4B056E4F193FCB7800A28161 /* FakeQuestionBuilder.m in Sources */,
 				4B056E4D193FCB7800A28161 /* AnswerTests.m in Sources */,
 				4B056E51193FCB7800A28161 /* MockStackOverflowCommunicator.m in Sources */,
 				4B056E57193FCB7800A28161 /* StackOverflowCommunicatorTests.m in Sources */,
 				4B056E52193FCB7800A28161 /* MockStackOverflowManagerDelegate.m in Sources */,
+				28D74C3319401C1400D91F7C /* NonNetworkedStackOverflowCommunicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +636,7 @@
 				4B056DA0193FC3D700A28161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B056DA1193FC3D700A28161 /* Build configuration list for PBXNativeTarget "BrowseOverflowTests" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +645,7 @@
 				4B056DA3193FC3D700A28161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

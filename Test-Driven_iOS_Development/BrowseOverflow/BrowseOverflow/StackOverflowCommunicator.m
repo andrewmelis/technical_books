@@ -22,9 +22,13 @@
     fetchingURL = url;
     
     NSURLRequest *request = [NSURLRequest requestWithURL:fetchingURL];
-    fetchingConnection = [NSURLConnection connectionWithRequest:request delegate:self];
+    [self launchConnectionForRequest:request];
 }
 
+- (void)launchConnectionForRequest:(NSURLRequest *)request
+{
+    fetchingConnection = [NSURLConnection connectionWithRequest:request delegate:self];
+}
 
 - (void)cancelAndDiscardURLConnection
 {
