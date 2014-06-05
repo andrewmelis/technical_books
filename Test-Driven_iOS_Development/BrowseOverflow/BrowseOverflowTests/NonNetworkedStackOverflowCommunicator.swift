@@ -1,8 +1,8 @@
 import Foundation
 
-class NonNetworkedStackOverflowCommunicator : StackOverflowCommunicator {
+class NonNetworkedStackOverflowCommunicator: StackOverflowCommunicator {
     
-    override func launchConnectionForRequest(request: NSURLRequest!) {
+    func launchConnectionForRequest(request: NSURLRequest!) {
         
     }
     

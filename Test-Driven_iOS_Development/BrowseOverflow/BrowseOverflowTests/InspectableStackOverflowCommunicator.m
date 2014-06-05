@@ -5,12 +5,12 @@
 
 - (NSURL *)URLToFetch
 {
-    return fetchingURL;
+    return super.fetchingURL;
 }
 
 - (NSURLConnection *)currentURLConnection
 {
-    return fetchingConnection;
+    return super.fetchingConnection;
 }
 
 
