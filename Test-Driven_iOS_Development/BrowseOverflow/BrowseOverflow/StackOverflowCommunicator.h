@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "BrowseOverflow-Swift.h"
+#import "StackOverflowCommunicatorDelegate.h"
 
 @interface StackOverflowCommunicator : NSObject <NSURLConnectionDataDelegate>
 {

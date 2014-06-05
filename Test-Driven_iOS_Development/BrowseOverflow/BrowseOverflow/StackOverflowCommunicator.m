@@ -1,4 +1,5 @@
 #import "StackOverflowCommunicator.h"
+#import "CustomName-Swift.h"
 
 @implementation StackOverflowCommunicator
 

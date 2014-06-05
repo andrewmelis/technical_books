@@ -39,7 +39,6 @@
 		4B056E56193FCB7800A28161 /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B056E48193FCB7800A28161 /* QuestionTests.m */; };
 		4B056E57193FCB7800A28161 /* StackOverflowCommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B056E49193FCB7800A28161 /* StackOverflowCommunicatorTests.m */; };
 		4B056E58193FCB7800A28161 /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B056E4A193FCB7800A28161 /* TopicTests.m */; };
-		4B313B0C1941153F00244E84 /* StackOverflowCommunicatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B313B0B1941153F00244E84 /* StackOverflowCommunicatorDelegate.swift */; };
 		4BA74BBB1940CDA2008AD44B /* NonNetworkedStackOverflowCommunicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA74BBA1940CDA2008AD44B /* NonNetworkedStackOverflowCommunicatorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,7 +105,7 @@
 		4B056E49193FCB7800A28161 /* StackOverflowCommunicatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowCommunicatorTests.m; sourceTree = "<group>"; };
 		4B056E4A193FCB7800A28161 /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTests.m; sourceTree = "<group>"; };
 		4B056E5E193FCC9D00A28161 /* BrowseOverflowTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BrowseOverflowTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		4B313B0B1941153F00244E84 /* StackOverflowCommunicatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackOverflowCommunicatorDelegate.swift; sourceTree = "<group>"; };
+		4B313B0D1941242D00244E84 /* StackOverflowCommunicatorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackOverflowCommunicatorDelegate.h; sourceTree = "<group>"; };
 		4BA74BBA1940CDA2008AD44B /* NonNetworkedStackOverflowCommunicatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonNetworkedStackOverflowCommunicatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -245,7 +244,7 @@
 			children = (
 				4B056DF5193FC92A00A28161 /* StackOverflowCommunicator.h */,
 				4B056DF6193FC92A00A28161 /* StackOverflowCommunicator.m */,
-				4B313B0B1941153F00244E84 /* StackOverflowCommunicatorDelegate.swift */,
+				4B313B0D1941242D00244E84 /* StackOverflowCommunicatorDelegate.h */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -413,7 +412,6 @@
 				4B056E03193FC92A00A28161 /* StackOverflowCommunicator.m in Sources */,
 				4B056D88193FC3D700A28161 /* MasterViewController.swift in Sources */,
 				4B056E05193FC92A00A28161 /* Topic.m in Sources */,
-				4B313B0C1941153F00244E84 /* StackOverflowCommunicatorDelegate.swift in Sources */,
 				4B056DFF193FC92A00A28161 /* Person.m in Sources */,
 				4B056E07193FC92A00A28161 /* AnswerBuilder.m in Sources */,
 				4B056E01193FC92A00A28161 /* Question.m in Sources */,
