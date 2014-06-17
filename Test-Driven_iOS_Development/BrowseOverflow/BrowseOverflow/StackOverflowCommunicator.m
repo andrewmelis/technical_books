@@ -1,5 +1,5 @@
 #import "StackOverflowCommunicator.h"
-#import "CustomName-Swift.h"
+//#import "CustomName-Swift.h"
 
 @implementation StackOverflowCommunicator
 
@@ -50,7 +50,8 @@
         errorHandler(error);
         [self cancelAndDiscardURLConnection];
     } else {
-        _receivedData = [[NSMutableData alloc] init]; }
+        _receivedData = [[NSMutableData alloc] init];
+    }
 }
 
 

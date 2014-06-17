@@ -4,3 +4,6 @@
 
 #import "StackOverflowCommunicator.h"
 #import "MockStackOverflowManagerDelegate.h"
+#import "MockStackOverflowManager.h"
+#import "Topic.h"
+#import "Question.h"

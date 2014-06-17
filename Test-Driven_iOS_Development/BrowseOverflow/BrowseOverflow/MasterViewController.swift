@@ -1,10 +1,3 @@
-//
-//  MasterViewController.swift
-//  BrowseOverflow
-//
-//  Created by Andrew Melis on 6/4/14.
-//  Copyright (c) 2014 Andrew Melis. All rights reserved.
-//
 
 import UIKit
 
